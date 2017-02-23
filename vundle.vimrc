@@ -19,8 +19,10 @@ Plugin 'L9'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
 
-" RAML 
-Plugin 'kennethzfeng/vim-raml'
+"" RAML 
+"Plugin 'kennethzfeng/vim-raml'
+
+Plugin 'kchmck/vim-coffee-script'
 
 " http://standardjs.com/
 " Install Syntastic and add this line to .vimrc:
@@ -41,6 +43,28 @@ Plugin 'vim-ruby/vim-ruby'
 
 " including the smyck colorscheme
 Plugin 'flazz/vim-colorschemes'
+
+" working on ELK stack for hoccer
+"Plugin 'robbles/logstash.vim'
+
+" for flutter.io
+"Plugin 'dart-lang/dart-vim-plugin'
+
+" programming sound, with supercollider
+"Plugin 'munshkr/vim-tidal'
+
+" programming go
+Plugin 'fatih/vim-go'
+
+" autocompletion with lua enabled vim
+"Plugin 'Shougo/neocomplete.vim'
+Plugin 'valloric/youcompleteme'
+
+" Perform all your vim insert mode completions with Tab
+Plugin 'ervandew/supertab'
+
+" integrate dash with vim
+Plugin 'rizzatti/dash.vim'
 
 " my personal vimrc setting
 Plugin 'crux/crux-vimrc'

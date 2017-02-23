@@ -2,6 +2,7 @@ set ignorecase "to easier search for capitalized word in english texts
 
 " http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 set undofile
+set undodir=~/.vim/undofiles
 " .http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 
 "set encoding=utf8
@@ -9,14 +10,17 @@ set undofile
 
     " this helps when working on the laptop
 set background=dark
-colorscheme smyck
+set background=light
+set background=dark
+"colorscheme smyck
+colorscheme MountainDew
 " colorscheme koehler
 " set background=dark
 " colorscheme solarized
 
     " some general stuff
 set novisualbell
-set fileformat=unix
+"set fileformat=unix
 
     " wrapping and adjusted curser movement
 set nowrap
@@ -36,6 +40,8 @@ inoremap <Up> <C-o>gk
 "nnoremap <Leader>W :%s/\s\+$//<cr>:let @/=''<CR>
     " remove trailing whitespace
 nnoremap <Leader>W :1,$s/\s\+$//<CR>
+    " trim tracking junk from URL
+nnoremap <Leader>? ^f?D
 
     " Enter date right side for notes.txt
 nnoremap <Leader>T !!date<CR>12i<TAB><ESC>
@@ -136,3 +142,7 @@ if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
 endif
+
+" ..add this to your .vimrc - it will prevent the logipat plugin from loading
+" and thereby defining an :ELP command.
+let g:loaded_logipat = 1
